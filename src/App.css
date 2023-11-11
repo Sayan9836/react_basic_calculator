@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+
+
+main {
+  width: max(25rem,25vw);
+  min-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 5px #ff4500;
+  border-radius: 5px;
+}
+
+#display {
+  width: 100%;
+  height: 5rem;
+  background-color: rgb(78, 78, 78);
+  color: white;
+  padding: 1rem;
+  box-shadow: 1px 2px 5px rgb(78, 78, 78);
+  border-radius: 5px 5px 0 0;
+}
+
+.box_wrapper {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1rem;
+  padding: 1rem;
+  background-color: orangered;
+  border-radius: 0 0 5px 5px;
+}
+
+.box {
+  background: linear-gradient(black,rgb(161, 159, 159),rgb(89, 88, 88));
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+.box span {
+  box-sizing: border-box;
+  font-size: 1.25rem;
+  color: rgb(255, 255, 255);
+}
+
+
+#clear {
+  grid-column: span 2;
+}
+
+#equals {
+  grid-row: span 2;
+}
+
+#decimal {
+  grid-column: span 2;
+}
+
